@@ -1,0 +1,13 @@
+
+:root {
+  /* font family */
+  --font-family: "Comfortaa", sans-serif;
+  /* colors */
+  --main-color: #252525;
+  --second-color: #fff;
+  --accent-color: #693737;
+  /* transition */
+  --tr-time: 0.4s;
+  --tr-time-medium: 1s;
+  --tr-time-long: 2s;
+}

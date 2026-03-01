@@ -1,0 +1,130 @@
+.hero {
+  perspective: 1000px;
+}
+
+.hero__container {
+  padding-block: 20vh;
+  padding-inline: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 100px;
+}
+
+
+@media (width <= 500px) {
+  .hero__container {
+    padding-block: 10vh;
+    gap: 50px;
+  }
+}
+
+@media (width <= 900px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hero__photos {
+  max-width: 300px;
+  height: 330px;
+}
+
+.hero__photo {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent-color) !important;
+}
+
+/* article */
+
+.hero__article {
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  min-width: 400px;
+  height: 260px;
+  font-size: 20px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px 2px var(--accent-color);
+  transition: all var(--tr-time);
+}
+
+@media (width <= 500px) {
+  .hero__article {
+    min-width: 300px;
+    height: 240px;
+  }
+}
+
+.hero__name {
+  line-height: 2;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.hero__exp {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#worker {
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-height: 29px;
+  font-size: 30px;
+  color: var(--accent-color);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (width <= 500px) {
+  #worker  {
+    font-size: 25px;
+  }
+}
+
+.typed-cursor {
+  display: inline-block;
+  height: 1.5em;
+  width: 3px;
+  background: var(--accent-color);
+}
+
+.hero__socials {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__socials a {
+  font-size: 17px;
+  transition: color var(--tr-time);
+}
+
+.hero__socials a i {
+  font-size: 24px;
+}
+
+@media (any-hover: hover) {
+  .hero__socials a:hover {
+    color: var(--accent-color);
+  }
+}
