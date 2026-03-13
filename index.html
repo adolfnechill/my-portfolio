@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Визитка</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__container">
+        <h1>WEB-development</h1>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-list-item"><a href="#about">Обо мне</a></li>
+            <li class="header__menu-list-item"><a href="#skills">Скиллы</a></li>
+            <li class="header__menu-list-item">
+              <a href="#portfolio">Портфолио</a>
+            </li>
+          </ul>
+          <button class="header__close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+        <button class="header__burger">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section id="hero" class="hero">
+        <div class="hero__container container">
+          <div class="hero__photos swiper">
+            <div class="swiper-wrapper">
+              <div class="hero__photo swiper-slide">
+                <img src="./img/cat.jpg" alt="" />
+              </div>
+              <div class="hero__photo swiper-slide">
+                <img src="./img/face.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="hero__article">
+            <p class="hero__name">Валерия / yuwi</p>
+            <div>
+              <p id="worker"></p>
+              <span class="typed-cursor"></span>
+            </div>
+            <p class="hero__exp">1 год опыта работы</p>
+            <div class="hero__socials">
+              <a href="https://t.me/web_yuwi" target="_blank">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://kwork.ru/user/web_yuwi" target="_blank">KWORK</a>
+              <a href="mailto:yuwebdev@mail.ru" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero -->
+
+      <!-- about -->
+      <section id="about" class="about">
+        <div class="about__container container">
+          <h2 class="about__title title">Обо мне</h2>
+          <div class="about__articles">
+            <article class="about__article">
+              <div class="about__article-title">
+                <h4>info</h4>
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="about__article-info">
+                <span>Город:</span>
+                <span>Москва, Россия</span>
+              </div>
+              <div class="about__article-info">
+                <span>Языки:</span>
+                <span>Русский, english, 中文</span>
+              </div>
+              <div class="about__article-info">
+                <span>Опыт:</span>
+                <span>1+ год в верстке + WP</span>
+              </div>
+            </article>
+            <article class="about__article">
+              <div class="about__article-title">
+                <h4>goals</h4>
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="about__article-info">
+                <span>1. Освоить Frontend разработку</span>
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="about__article-info">
+                <span>2. React, TS, Git, Npm</span>
+                <i class="fa-solid fa-spinner fa-spin"></i>
+              </div>
+              <div class="about__article-info">
+                <span>3. Node.JS, SQL, Python</span>
+                <i class="fa-solid fa-spinner fa-spin"></i>
+              </div>
+            </article>
+            <article class="about__article">
+              <div class="about__article-title">
+                <h4>message</h4>
+                <i class="fa-regular fa-comment-dots"></i>
+              </div>
+              <div class="about__article-info">
+                <span>
+                  Ежедневно развиваю свои навыки работы в вебе, решаю задачки на
+                  codewars, читаю доку, прохожу курсы
+                </span>
+              </div>
+              <div class="about__article-info">
+                <span>
+                  Главное - любить свое дело, поэтому даже день без обучения —
+                  тяжелый и грустный день :(
+                </span>
+              </div>
+            </article>
+            <article class="about__article">
+              <div class="about__article-title">
+                <h4>fun</h4>
+                <i class="fa-brands fa-gratipay"></i>
+              </div>
+              <div class="about__article-info">
+                <span>
+                  Очень сильно интересуюсь JavaScript, кодить на нем приятнее всего
+                </span>
+              </div>
+              <div class="about__article-info">
+                <span>
+                  Хочу также изучить работу с тг-ботами, созданием приложений и серьезных программок!
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+
+      <!-- skills -->
+      <section id="skills" class="skills">
+        <div class="skills__container container">
+          <h2 class="skills__title title">Скиллы</h2>
+          <div class="skills__wrapper">
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-brands fa-html5"></i>
+              <p class="skills__skill-title">HTML</p>
+              <p class="skills__skill-descr">
+                Язык разметки, используется для создания структуры, скелета
+                сайта
+              </p>
+            </article>
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-brands fa-css3"></i>
+              <p class="skills__skill-title">CSS</p>
+              <p class="skills__skill-descr">
+                Язык стилей, меняет внешний вид элементов на веб-странице
+              </p>
+            </article>
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-brands fa-js"></i>
+              <p class="skills__skill-title">javascript</p>
+              <p class="skills__skill-descr">
+                язык программирования, делает сайты интерактивными
+              </p>
+            </article>
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-brands fa-php"></i>
+              <p class="skills__skill-title">php</p>
+              <p class="skills__skill-descr">
+                серверный язык программирования, создает динамические
+                веб-страницы
+              </p>
+            </article>
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-brands fa-wordpress-simple"></i>
+              <p class="skills__skill-title">wordpress</p>
+              <p class="skills__skill-descr">
+                CMS, позволяет создавать и управлять веб-сайтами без глубоких
+                технических знаний
+              </p>
+            </article>
+            <article class="skills__skill">
+              <i class="skills__skill-icon fa-solid fa-spinner fa-spin"></i>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
+
+      <!-- portfolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title title">Портфолио</h2>
+          <div class="portfolio__wrapper">
+            <article class="portfolio__item">
+              <a href="https://spasaika.ru" target="_blank">
+                <div class="portfolio__image">
+                  <img src="./img/spasaika.png" alt="" />
+                </div>
+                <p>Верстка сайта по макету</p>
+              </a>
+            </article>
+          </div>
+        </div>
+        <div class="go-up">
+          <a href="#header"><i class="fa-regular fa-circle-up"></i></a>
+        </div>
+      </section>
+      <!-- portfolio -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

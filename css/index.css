@@ -1,0 +1,34 @@
+/* base */
+@import url("./base/normalize.css");
+@import url("./base/fonts.css");
+@import url("./base/vars.css");
+@import url("./base/globals.css");
+/* blocks */
+@import url("./blocks/header.css");
+@import url("./blocks/hero.css");
+@import url("./blocks/about.css");
+@import url("./blocks/skills.css");
+@import url("./blocks/portfolio.css");
+
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
