@@ -1,3 +1,4 @@
+
 "use strict"
 
 const hero = document.querySelector(".hero");
@@ -23,4 +24,5 @@ hero.addEventListener("mousemove", (e) => {
 
 hero.addEventListener("mouseleave", () => {
   heroBlock.style.transform = `rotateX(0) rotateY(0) scale(1)`;
+
 })

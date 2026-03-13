@@ -1,3 +1,4 @@
+
 import "./mousemove.js";
 import "./burger.js";
 
@@ -23,3 +24,4 @@ const slider = new Swiper(".hero__photos", {
     clickable: true,
   },
 });
+
