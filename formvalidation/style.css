@@ -1,0 +1,100 @@
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 400px;
+  margin-top: 20vh;
+  margin-inline: auto;
+  padding: 20px;
+  background-color: #201e1e;
+  border: 2px solid #301818;
+  border-radius: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.field__control {
+  background-color: #acacac;
+  border-radius: 10px;
+  width: 400px;
+  height: 30px;
+}
+
+.field__control--textarea {
+  height: 70px;
+  max-width: 400px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+.radios {
+  border-color: #acacac;
+  border-radius: 10px;
+  width: 370px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  align-self: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox__control {
+  width: 17px;
+  height: 17px;
+}
+
+.checkbox__label {
+  font-size: 16px;
+}
+
+button {
+  align-self: center;
+  background-color: #acacac;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.field__error {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.4em;
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  color: red;
+  line-height: 1.25;
+}
+
+.field__error:empty {
+  display: none;
+}
+
+.field:has([required]) .field__label::after,
+.radios:has([required]) .radios__legend::after {
+  content: "*";
+  padding-inline: 0.25em;
+  color: red;
+}
+
+.checkbox .field_errors {
+  flex-basis: 100%;
+  display: block;
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>form validation</title>
+  </head>
+  <body>
+    <form id="regForm" action="/registration" method="post" novalidate data-js-form>
+      <p class="field">
+        <label class="field__label" for="login">Логин</label>
+        <input
+          class="field__control"
+          name="login"
+          id="login"
+          aria-errormessage="login__errors"
+          minlength="3"
+          maxlength="12"
+          required
+        />
+        <span
+          class="field_errors"
+          id="login__errors"
+          data-js-form-field-errors
+        ></span>
+      </p>
+      <p class="field">
+        <label class="field__label" for="password">Пароль</label>
+        <input
+          class="field__control"
+          type="text"
+          name="password"
+          id="password"
+          aria-errormessage="password__errors"
+          minlength="8"
+          maxlength="16"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+          title="Пароль должен быть длиной от 8 до 16 символов, включать как минимум одну цифру, одну букву в нижнем и одну букву в верхнем регистре"
+          required
+        />
+        <span
+          class="field_errors"
+          id="password__errors"
+          data-js-form-field-errors
+        ></span>
+      </p>
+      <p class="field">
+        <label class="field__label" for="about">О себе</label>
+        <textarea
+          class="field__control field__control--textarea"
+          name="about"
+          id="about"
+        ></textarea>
+      </p>
+      <fieldset class="radios">
+        <legend class="radios__legend">Ваш пол?</legend>
+        <input
+          class="radios__control"
+          type="radio"
+          name="gender"
+          id="female"
+          value="Женский"
+          aria-errormessage="gender__errors"
+          required
+        />
+        <label for="female">Женский</label>
+        <input
+          class="radios__control"
+          type="radio"
+          name="gender"
+          id="male"
+          value="Мужской"
+          aria-errormessage="gender__errors"
+          required
+        />
+        <label for="male">Мужской</label>
+        <input
+          class="radios__control"
+          type="radio"
+          name="gender"
+          id="notMentioned"
+          value="Не скажу"
+          aria-errormessage="gender__errors"
+          required
+        />
+        <label for="notMentioned">Не скажу</label>
+        <span
+          class="field_errors"
+          id="gender__errors"
+          data-js-form-field-errors
+        ></span>
+      </fieldset>
+      <div class="field checkbox">
+        <input
+          class="checkbox__control"
+          type="checkbox"
+          name="agreement"
+          id="agreement"
+          aria-errormessage="agreement__errors"
+          required
+        />
+        <label class="field__label checkbox__label" for="agreement">
+          Согласен с правилами конфиденциальности
+        </label>
+        <span
+          class="field_errors"
+          id="agreement__errors"
+          data-js-form-field-errors
+        ></span>
+      </div>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </body>
+</html>
